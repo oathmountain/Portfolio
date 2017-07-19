@@ -1,0 +1,41 @@
+﻿h2{
+	text-align:center;
+	font-size: 30px;
+
+}
+h3{
+	font-size: 26px;
+	margin-bottom: 0px;
+}
+#resume{
+	min-width:500px;
+	margin-left:10%;
+	margin-right:10%;
+}
+.p1{	
+	font-size:20px;
+	margin-bottom:5px;
+	margin-top:5px;
+}
+.resumecontent{
+	padding-bottom:10px;
+	border-bottom: 1px solid black;
+}
+.resumeHider, .resumeMasterHider{
+	width:100%;
+	background-color:grey;
+	border:none;
+	outline: 2px solid black;
+	padding:2px;
+	height:14px;
+}
+.resumeHider:hover, .resumeMasterHider:hover{
+	background-color:lightgrey;
+}
+.resumeHider img, .resumeMasterHider img{
+	position:relative;
+	top:-11px;
+	height:20px;
+	width:20px;
+	clip-path: inset(10px 10px 0px 0px);
+}

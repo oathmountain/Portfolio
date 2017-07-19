@@ -1,0 +1,26 @@
+﻿h2{
+	text-align:center;
+	font-size: 30px;
+	padding-bottom:0px;
+	margin-bottom:0px;
+}
+.textcontent{
+	min-width:300px;
+}
+.textcontent p{
+	margin-left:5%;	
+	font-size:20px;
+}
+.rightcontent{
+	float:right;
+	margin: 20px;
+}
+.slideshow img{
+	display:block;
+	margin:auto;
+	height:0%;
+	width:0%;
+}
+.content{
+	border-bottom: 1px solid black;
+}

@@ -1,0 +1,254 @@
+﻿body {
+	z-index:-1;
+	height:1050px;
+	width:100%;
+	overflow-y:scroll;
+	padding:0px;
+	margin:0px;	
+	min-height:100%;
+	min-width:770px;
+}
+h1{
+	text-align:center;
+	color:#6A4F4F;
+	text-shadow:3px -3px 8px black;
+	font-size: 40px;
+	margin-top:15px;
+}
+
+#headercontainer{
+	background:none;
+	height:200px;
+	position:relative;
+	left:0px;
+	top:0px;
+	width:100%;
+	border-bottom: 5px solid black;
+}
+#headercontents{
+	position:relative;
+	left:0px;
+	top:0px;
+	height:100%;
+	margin-bottom:0px;
+	width:100%;
+	
+	margin-left:auto;
+	margin-right:auto;
+	background-color: #0505bb;
+	background-image: url(Images/navigation_bgHigh.png);
+	
+}
+header{
+	height:80%;
+	top:10%;
+	position:relative;
+	margin:auto;
+	width:60%;
+	min-width:400px;
+	background-color: #0505cc;
+	background-image: url(Images/navigation_bgHigh.png);
+	border: 4px solid black;
+	box-shadow: 4px 4px 30px 5px #050505;
+
+}
+
+#TopNavUl{
+	position:absolute;
+	bottom:0px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left:5px;		
+	background-color:black;
+	height:64px;
+	width:98%;
+	margin:0.75%;
+	box-shadow: 0px 0px 30px 5px #050505;
+}
+#TopNavUl ul{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+.mainnav{
+	position:relative;
+	float:left;	
+	bottom:0px;
+	display:inline-block;
+	background-image:url(Images/navigation_bgblue3.png);
+	margin-top:2px;
+	margin-right:3px;
+	height:60px;
+}
+.mainnav a{
+	display:block;
+	padding-bottom:20px;
+	padding-top:20px;
+	line-height:20px;
+	text-decoration:none;
+	font-family:Georgia,"Times New Roman", Times, serif;
+	font-size:21px;
+	text-shadow:2px -2px 4px black;
+	color:#6A4F4F;
+}
+.sub-menu{
+	background-color:black;
+	border:2px solid #010101;
+	position:absolute;
+	left:0;
+	top:60px;
+	margin:0px;
+	padding:0px;
+	display:none;	
+}
+.sub-menu li{
+	background-image:url(Images/navigation_bgblue3.png);
+	float:left;
+	position:relative;
+	margin:0px;
+	padding:0px;
+	margin-right:3px;
+	display:block;
+}
+.sub-menu a{
+	margin:0px;
+	padding:2px;
+	line-height:18px;
+	text-decoration:none;
+	font-size:18px;
+}
+.mainnav a:hover{
+	color:#FFF;
+}
+.mainnav a:active{
+	text-shadow: none;
+}
+
+#sections{
+	margin: auto;
+	position:relative;
+	width:100%;
+	height:100%;
+	left:0px;
+	right:0px;
+	bottom:0px;
+}
+#section1,#section2{
+	margin-top:auto;
+	margin-bottom:auto;			
+	top:0px;
+}
+
+#section1{
+	position:fixed;
+	width:200px;
+	background-color: #101010;
+	left:-190px;	
+	box-shadow: 1px 0px 30px 5px #050505;
+	z-index:2;
+	
+	height:80%;
+	margin-top: 200px;
+	bottom:10px;
+	background-image: url(Images/navigation_bgblack.png);	
+}
+#section1content{
+	left:0px;
+	float:left;
+	width:95%;
+	height:100%;
+	color:white;
+	text-align:center;
+}
+#sec1HideButton{
+	float:left;
+	width:5%;
+	height:100%;
+	background-color:black;
+}
+#sec1HideButton button{
+	background-color:black;
+	border:none;
+	height:100%;
+	width:100%;
+	outline: 2px solid black;
+	box-shadow: -1px 0px 20px 3px #050505;
+	padding:0px;
+}
+#sec1HideButton button:hover{
+	background-color:#101010;
+}
+
+#section2{
+	position:absolute;
+	height: 100%;
+	width:100%;
+	box-shadow: 0px -4px 20px 2px #050505;
+	background-color: #dddddd;
+	border-top:5px solid black;
+	background-image: url(Images/bg_white.png);
+	z-index:0;
+	min-width:420px;
+	padding-top:0px;
+}
+#shader1, #shader2{	
+	position:absolute;
+	top:0px;
+	height:100%;
+	width:15%;
+	background-color:black;
+	opacity:0.2;
+	z-index:1;
+}
+#shader2{
+	right:0px;
+}
+#section2content{
+	background-image: url(Images/bg_white.png);
+	margin:auto;
+	position:absolute;
+	left:15%;
+	top:0px;
+	width:70%;
+	height:100%;
+	z-index:2;	
+	min-width:650px;
+}
+
+
+#log p{
+	color:#fff;
+}
+#widthcalcdiv{
+	position:absolute;
+	float:left;
+	white-space:nowrap;
+	visibility:hidden;
+}
+
+.sec1HideButton img{
+	position:absolute;
+	left:190px;
+	height:20px;
+	width:20px;
+	clip-path: inset(0px 10px 10px 0px);
+}
+
+footer{
+	margin-left:15%;
+	margin-right:15%;
+	position:fixed;
+	bottom:0px;
+	width:70%;
+	background-color:#101010;
+
+}
+footer p{
+	position:relative;
+	text-align:center;
+	color: white;
+	margin:0px;
+}
+footer a{
+	color:white;
+}

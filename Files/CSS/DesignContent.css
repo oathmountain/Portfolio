@@ -1,0 +1,21 @@
+﻿.tabs{
+	overflow:hidden;
+}
+.tabs button{	
+	opacity:1;
+	background:none;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 16px;
+	transition: 0.3s;
+	font-size: 17px;
+	border: 1px solid grey;
+}
+.tabs button:hover{
+	background-color: #aaa;
+}
+.tabs button.active{
+	background-color: #aaa;
+}
