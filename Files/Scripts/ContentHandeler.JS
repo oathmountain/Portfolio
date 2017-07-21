@@ -24,11 +24,9 @@
 	}else{
 		$(".slideshow").css({"height":"300px", "width":"400px"});
 		$(".slideshow img").css({"width":"100%","height":"100%"});
-		if($(".slideshow img").length > 0){
-			imageCount = $(".slideshow img").length;
-		}else{
+		//if($(".slideshow img").length > 0){
 			imageCount = $("#riftshow > img").length;
-		}
+		//}
 		//$("#log").append("<p>"+imageCount+"</p>");
 		slideShow();
 		intervalref = setInterval(function(){slideShow();},3000);
