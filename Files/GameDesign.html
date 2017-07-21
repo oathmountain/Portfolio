@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <link rel="stylesheet" type="text/css" href="CSS/GesällMain.css">
 <link rel="stylesheet" type="text/css" href="CSS/HomeContent.css">
-<link rel="stylesheet" type="text/css" href="CSS/DesignContent.css">
+<link rel="stylesheet" type="text/css" href="CSS/PortfolioContent.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="Scripts/GesällMain.js"></script>
-<script src="Scripts/DesignHandeler.js"></script>
-<script src="Scripts/ContentHandeler.js"></script>
+<script src="Scripts/GesällMain.JS"></script>
+<script src="Scripts/DesignHandeler.JS"></script>
+<script src="Scripts/ContentHandeler.JS"></script>
 
 <title>Jimmy Edberg - GameDesign</title>
 
@@ -17,16 +17,17 @@
 <div id="headercontainer">
 <div id="headercontents">
 <header>
-<h1 id="title">Jimmy Edberg - Games</h1>
+<h1 id="title">Jimmy 'Oathmountain' Edberg</h1>
+<h2>Game Developer, Designer and Programmer</h2>
 <div id="TopNavUl">
 <ul>
 <li class="mainnav"><a href="../index.html">Home</a></li>
 <li class="mainnav"><a href="Personal.html">Personal</a></li>
-<li class="mainnav dropdown"><a href="GameDesign.html">GameDesign</a>
-<ul class="sub-menu">
+<li class="mainnav dropdown"><a href="GameDesign.html">Portfolio</a>
+<!--<ul class="sub-menu">
 <li><a href="GameDesign.html">Game Projects</a></li>
 <li><a href="#">Code Samples</a></li>
-</ul>
+</ul>-->
 </li>
 <li class="mainnav"><a href="Resume.html">Resume</a></li>
 </ul>
@@ -53,20 +54,24 @@
 </div>
 
 <div id="section2">
-<div id="shader1">
-</div>
+<div id="shader1"></div>
 <div id="section2content">
+<div class="contenttabs">
+<button class="contentlinks" name="gameproject">Game Projects</button>
+<button class="contentlinks" name="code">Code Samples</button>
+</div>
+<div id="gameproject" class="designcontent">
 <h2>Game Projects</h2><br><br>
 <div class="tabs">
-<button class="tablinks" name="DimensionalRift">DimensionalRift</button>
+<button class="tablinks" name="DimensionalRift">DimensionalRift VR</button>
 <button class="tablinks" name="SuperSpy2D">SuperSpy2D</button>
 </div>
 <div id="DimensionalRift" class="content">
 <div class="contentheader">
-<h2>DimensionalRift</h2>
+<h2>DimensionalRift VR</h2>
 </div>
 <div class="rightcontent">
-<div class="slideshow">
+<div id="riftshow" class="slideshow">
 <img src="Images/DR1.jpg" alt="DimensionalRift1">
 <img src="Images/DR2.jpg" alt="DimensionalRift2">
 <img src="Images/DR3.jpg" alt="DimensionalRift3">
@@ -75,7 +80,7 @@
 </div>
 <div>
 <video width="400" height="300" controls>
-<source src="DimensionalRift.webm" type="video/webm">
+<source src="Videos/DimensionalRift.webm" type="video/webm">
 </video>
 </div>
 </div>
@@ -103,16 +108,52 @@ datahandeling such as score, highscore and save/load, as well as implementing th
 <div class="contentheader">
 <h2>SuperSpy2D</h2>
 </div>
+<div class="rightcontent">
+<div id="spyshow" class="slideshow">
+<img src="Images/superspy1.jpg" alt="superspy1">
+<img src="Images/superspy2.jpg" alt="superspy2">
+<img src="Images/superspy3.jpg" alt="superspy3">
+<img src="Images/Superspymenu.jpg" alt="superspy4">
+</div>
+</div>
 <div class="textcontent">
-<p>
-
-</p>
+<p>SuperSpy2D is a simplistic 2D-sideview game, played with keyboard or controller.</p>
+<p>The gameplay revolves around the player, as a spy, using stealth to sneak into buildings and steal stuff, without getting detected by patroling guards.</p>
+<br>
+<p>This game was made by a group of 3 as a school project,that lasted 6 months on 50% worktime.</p>
+<p>In this project I was involved in every aspect of the game, except sound, with atleast 50% of the game create by me.</p>
+<p>I did most of the AI, made and implemented animations, created assets and levelmechanichs, menufunctionality with profiles, save and load, and highscore.</p>
+<br><br>
 </div>
 </div>
 
 </div>
-<div id="shader2">
+<div id="code" class="designcontent">
+<h2>Code Samples (work in progress)</h2><br><br>
+<div class="tabs">
+<button class="tablinks" name="Path-Finding">Path-Finding C++</button>
+<button class="tablinks" name="none">None</button>
 </div>
+<div class="codecontent">
+<h2>
+Path-Finding in a map:<br>
+</h2>
+<p align="center"><a href="Path-Finding.cpp" download>.cpp file</a></p>
+<p>Main loop</p>
+<img src="Images/pathfindermain.jpg">
+<img src="Images/pathfinderprint.jpg">
+<p>Initiation of function</p>
+<img src="Images/pathfinderinit2.jpg">
+<p>Function main loop</p>
+<img src="Images/pathfindermainloop2.jpg">
+<p>Function inner loop</p>
+<img src="Images/pathfinderinnerloop.jpg">
+<p>Function evaluation</p>
+<img src="Images/pathfinderevaluate2.jpg">
+</div>
+</div>
+</div>
+<div id="shader2"></div>
 </div>
 </div>
 <div id="widthcalcdiv"></div>

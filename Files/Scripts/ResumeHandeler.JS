@@ -9,6 +9,7 @@
 		}else{
 			setResumeArrow($(this),false);
 		}
+		calculateContent();
 	});
 	$(".resumeMasterHider").click(function(){
 		$(".resumeSection").each(function(){
@@ -28,6 +29,7 @@
 			setResumeArrow($(this),false);
 			hidden=true;
 		}
+		calculateContent();
 	});
 });
 var hidden = false;

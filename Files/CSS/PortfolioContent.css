@@ -1,0 +1,24 @@
+﻿.tabs, .contenttabs{
+	overflow:hidden;
+}
+.tabs button, .contenttabs button{	
+	opacity:1;
+	background-color:transparent;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 16px;
+	transition: 0.3s;
+	font-size: 17px;
+	border: 1px solid grey;
+}
+.tabs button:hover, .contenttabs button:hover{
+	background-color: #aaa;
+}
+.tabs button.active, .contenttabs button.active{
+	background-color: #aaa;
+}
+.codecontent{
+	margin-left:10px;
+}

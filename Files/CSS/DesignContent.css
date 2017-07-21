@@ -1,7 +1,7 @@
-﻿.tabs{
+﻿.tabs, .contenttabs{
 	overflow:hidden;
 }
-.tabs button{	
+.tabs button, .contenttabs button{	
 	opacity:1;
 	background:none;
 	float: left;
@@ -13,9 +13,9 @@
 	font-size: 17px;
 	border: 1px solid grey;
 }
-.tabs button:hover{
+.tabs button:hover, .contenttabs button:hover{
 	background-color: #aaa;
 }
-.tabs button.active{
+.tabs button.active, .contenttabs button.active{
 	background-color: #aaa;
 }
