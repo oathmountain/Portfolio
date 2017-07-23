@@ -107,11 +107,11 @@ function calculateContent(){
 function checkImages(){
 	if($(".slideshow img").length == 1){
 		var src = $(".slideshow img").get(0).src;
-		if(src.indexOf("levels.jpg") != -1 || src.indexOf("mixedgames.png" != -1)){//=="*/levels.jpg" ||  "*/mixedgames.png"){
+		if(src.indexOf("levels") != -1 || src.indexOf("mixedgames" != -1)){//=="levels.jpg" ||  "mixedgames.png"){
 			$(".slideshow").css({"height":"400px", "width":"400px"});
 			$(".slideshow img").css({"width":"100%","height":"100%"});
 		}
-		else if(src.indexOf("bild.jpg") != -1){
+		if(src.indexOf("bild.jpg") != -1){
 			$(".slideshow").css({"height":"400px", "width":"250px"});
 			$(".slideshow img").css({"width":"100%","height":"100%"});
 		}
