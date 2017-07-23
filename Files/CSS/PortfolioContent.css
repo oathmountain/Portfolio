@@ -21,4 +21,10 @@
 }
 .codecontent{
 	margin-left:10px;
+	margin-right: 10px;
+}
+img{
+	display:block;
+	margin:auto;
+	max-width: 100%;
 }

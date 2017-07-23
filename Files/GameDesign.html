@@ -18,7 +18,7 @@
 <div id="headercontents">
 <header>
 <h1 id="title">Jimmy 'Oathmountain' Edberg</h1>
-<h2>Game Developer, Designer and Programmer</h2>
+<h3 id="subtitle">Game Developer, Designer and Programmer</h3>
 <div id="TopNavUl">
 <ul>
 <li class="mainnav"><a href="../index.html">Home</a></li>
@@ -126,20 +126,52 @@ datahandeling such as score, highscore and save/load, as well as implementing th
 <br><br>
 </div>
 </div>
+</div>
 
-</div>
 <div id="code" class="designcontent">
-<h2>Code Samples (work in progress)</h2><br><br>
+<h2>Code Samples</h2><br><br>
 <div class="tabs">
-<button class="tablinks" name="Path-Finding">Path-Finding C++</button>
-<button class="tablinks" name="none">None</button>
+<button class="tablinks" name="Prog3">System for 2D game creation C/C++</button>
+<button class="tablinks" name="Pathfinding">Pathfinding C++</button>
+<button class="tablinks" name="Prog2">Saving map locations Java</button>
 </div>
-<div class="codecontent">
+<div id="Prog3" class="codecontent">
 <h2>
-Path-Finding in a map:<br>
+System for 2D game creation with SDL2 | C/C++ | School project<br>
 </h2>
-<p align="center"><a href="Path-Finding.cpp" download>.cpp file</a></p>
-<p>Main loop</p>
+<p align="center">Created winter -16/17</p>
+<p align="center"><a href="https://github.com/oathmountain/Prog3">GitHub Repo</a></p>
+<div class="textcontent">
+<p>This project was made for a school programming course in C/C++.</p>
+<p>The asignment was to create a system including base classes from which you could create 
+multiple, similar 2D-games, and it had to be made by using the SDL2 libraries.</p>
+<p>It also had a requirement that implementations should only be able to create objects 
+dynamically and for value semantics to be forbidden.</p>
+<p>The program includes gameloop, user triggered events, collision detection and both static, 
+movable and animated sprites amongst other functions.</p>
+<p>The implementation of the system in main is just to display functionality.</p>
+</div>
+</div>
+
+<div id="Pathfinding" class="codecontent">
+<h2>
+Path-Finding in a map with A* algorithm | C++ | Hobby project<br>
+</h2>
+<p align="center">Created spring -17</p>
+<p align="center"><a href="https://github.com/oathmountain/PathFinding">GitHub Repo</a></p>
+<div class="textcontent">
+<p>This is a piece of code that I wrote because I wanted to try out an assignment I found 
+online when reading up on algorithms.</p>
+ 
+<p>It is a method that implements an A* search algorithm to find and return the shortest 
+path between two points in a 2-dimensional map. </p>
+<p>The method takes a start and goal point, a pointer to a map as well as its height and width, 
+a pointer to write the path to and the max amount of steps the path may take.</p>
+<p>In the map traversable points are indicated by 1, and none-traversable by 0.</p>
+<p>It either returns the amount of steps needed to reach the goal after writing the path to 
+the pointer or -1 if it can not reach the goal.</p>
+</div>
+<!--<p>Main loop</p>
 <img src="Images/pathfindermain.jpg">
 <img src="Images/pathfinderprint.jpg">
 <p>Initiation of function</p>
@@ -149,7 +181,35 @@ Path-Finding in a map:<br>
 <p>Function inner loop</p>
 <img src="Images/pathfinderinnerloop.jpg">
 <p>Function evaluation</p>
-<img src="Images/pathfinderevaluate2.jpg">
+<img src="Images/pathfinderevaluate2.jpg">-->
+</div>
+
+<div id="Prog2" class="codecontent">
+<h2>
+Saving map locations | Java-Swing | School project<br>
+</h2>
+<p align="center">Created spring -16 with a classmate</p>
+<p align="center"><a href="https://github.com/oathmountain/Prog2">GitHub Repo</a></p>
+<div class="textcontent">
+<p>This project was made for a school programming course in Java.</p>
+
+<p>The asignment was to create a system, with the help of Swing, that allows the user to
+open an image and define locations on it with the mouse.</p>
+<img src="Images/Prog2-ScrS1.jpg">
+
+<p><br><br><br>The locations would include an array of options, like categories and descriptions. 
+They alse had to be able to be displayed, or hidden, in various states.</p>
+<img src="Images/Prog2-ScrS2.jpg">
+
+<p><br><br><br>The program uses a lot of listeners and Swing components, has both add and delete options,
+a search by name function as well as a function that searches an area around a mouse click.</p>
+<img src="Images/Prog2-ScrS3.jpg">
+
+
+<p><br><br><br>It also have save and load options, and it prompts the user if changes has been made when
+the user tries to exit the program.</p>
+<img src="Images/Prog2-ScrS4.jpg">
+</div>
 </div>
 </div>
 </div>

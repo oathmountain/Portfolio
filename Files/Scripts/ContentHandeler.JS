@@ -43,17 +43,25 @@ var currentCount = 1;
 
 function calculateContent(){
 	var totalHeight = 0;
-	if($(".content").length > 0 && $(".content").parent().attr("style") == "display:block"){
+	if($(".contentlinks.active").attr("name") === "gameproject"){//.length > 0){
 		$(".content").each(function(){
-			$(this).children().each(function(){
-				if(totalHeight < $(this).outerHeight(true)){
-					totalHeight = $(this).outerHeight(true);
-				}
-			});
+			if($(this).attr("style") == "display:block"){
+				$(this).children().each(function(){
+					if(totalHeight < $(this).outerHeight(true)){
+						totalHeight = $(this).outerHeight(true);
+					}
+				});
+			}
 			totalHeight = totalHeight + $(".contentheader").outerHeight(true);
 			$(this).css("height", totalHeight);
 		});
+		if(totalHeight > 1050){//($("body").height()-200)){
+			$("body").css("height", (totalHeight+200+"px"));
+		}else{
+			$("body").css("height", "1050px");
+		}
 	}
+	totalHeight = 0;
 	if($("#resume").length > 0){
 		$(".resumeSection").each(function(){
 			$(this).children().each(function(){
@@ -70,20 +78,25 @@ function calculateContent(){
 			$("body").css("height", "1050px");
 		}
 	}
-	if($(".codecontent").length > 0 && $(".codecontent").parent().attr("style") == "display:block"){
-		$(".codecontent").each(function(){
-			$(this).children().each(function(){
+	totalHeight = 0;
+	if($(".contentlinks.active").attr("name") === "code"){//.length > 0){
+		$("#"+$(".tablinks.active").attr("name")).children().each(function(){
+			//if($(this).attr("style") == "display:block"){
+				//$(this).children().each(function(){
 				totalHeight = totalHeight + $(this).outerHeight(true);
-			});			
+				//});
+				//$(this).css("height", totalHeight);
+			//}
 		});
-		$(".codecontent").css("height", totalHeight);
-		totalHeight = 0;
-		$("#code").children().each(function(){
-			totalHeight = totalHeight + $(this).outerHeight(true);
-		});
+		$("#"+$(".tablinks.active").attr("name")).css("height", totalHeight+100);
+		//$(".codecontent.active").css("height", totalHeight);
+		//totalHeight = 0;
+		//$("#code").children().each(function(){
+			//totalHeight = totalHeight + $(this).outerHeight(true);
+		//});
 		if(totalHeight > 1050){//($("body").height()-200)){
-			$("#code").css("height", totalHeight);
-			$("body").css("height", (totalHeight+200+"px"));
+			//$("#code").css("height", totalHeight);
+			$("body").css("height", (totalHeight+325+"px"));
 		}else{
 			$("body").css("height", "1050px");
 		}

@@ -1,5 +1,6 @@
 ﻿$(document).ready(function(){
 	$("#log").hide();//comment away to enable log
+	$("#section1").hide();//comment away to enable section 1
 	sec1Hidden = localStorage.getItem("hidden");
 	$(window).resize(function(){
 		calculateNav();
