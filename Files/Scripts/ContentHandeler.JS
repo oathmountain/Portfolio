@@ -111,7 +111,7 @@ function checkImages(){
 			$(".slideshow").css({"height":"400px", "width":"400px"});
 			$(".slideshow img").css({"width":"100%","height":"100%"});
 		}
-		if(src.indexOf("bild.jpg") != -1){
+		if(src.indexOf("bild") != -1){
 			$(".slideshow").css({"height":"400px", "width":"250px"});
 			$(".slideshow img").css({"width":"100%","height":"100%"});
 		}
