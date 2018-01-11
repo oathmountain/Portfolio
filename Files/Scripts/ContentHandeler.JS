@@ -12,6 +12,10 @@
 		calculateContent();
 		if($(this).attr("name")=="DimensionalRift"){
 			imageCount = $("#riftshow > img").length;
+		}else if($(this).attr("name")=="3dm"){
+			imageCount = $("#3dmshow > img").length;
+		}else if($(this).attr("name")=="Pac-014"){
+			imageCount = $("#pacshow > img").length;
 		}else{
 			imageCount = $("#spyshow > img").length;
 		}
@@ -122,7 +126,7 @@ function slideShow(){
 	$(".slideshow img").hide();
 	$(".slideshow img:nth-child("+currentCount+")").show();
 	currentCount++;
-	if(currentCount == imageCount){
+	if(currentCount > imageCount){
 		currentCount = 1;
 	}
 }
