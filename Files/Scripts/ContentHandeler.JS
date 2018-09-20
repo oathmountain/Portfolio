@@ -16,7 +16,11 @@
 			imageCount = $("#3dmshow > img").length;
 		}else if($(this).attr("name")=="Pac-014"){
 			imageCount = $("#pacshow > img").length;
-		}else{
+		}else if($(this).attr("name")=="FlappyCrows"){
+			imageCount = $("#flappyshow > img").length;
+		}else if($(this).attr("name")=="AsadotternsOmen"){
+            imageCount = $("#asadotternshow > img").length;
+        }else{
 			imageCount = $("#spyshow > img").length;
 		}
 		currentCount = 1;
